@@ -57,10 +57,6 @@ dan peluang bisnis.
     ├── Airbnb Listings Bangkok.csv              # Dataset mentah
     ├── Airbnb_Listings_Bangkok_cleaned.csv      # Dataset setelah pembersihan
     ├── Airbnb_Dictionary.pdf                    # Dokumentasi data
-    ├── Chart_Generation_for_PPT.py              # Kode visualisasi untuk presentasi
-    ├── Catatan_Presentasi_Airbnb_Bangkok.md     # Catatan pembicara presentasi
-    ├── Chart_*.png                              # Grafik hasil visualisasi
-    ├── Airbnb_Bangkok_PPT_Content.txt           # Draft isi presentasi
     └── README.md                                # Dokumentasi proyek
 
 ## Langkah Penggunaan
