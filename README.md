@@ -48,15 +48,11 @@ Uji T – untuk membandingkan performa host
 Tingkat Keyakinan: 95% (α = 0,05)
 Struktur Proyek
 Proyek Capstone Modul 2/
-├── Airbnb_Bangkok_MGRS.ipynb                # Notebook analisis utama
-├── Airbnb Listings Bangkok.csv              # Dataset mentah
-├── Airbnb_Listings_Bangkok_cleaned.csv      # Dataset setelah pembersihan
-├── Airbnb_Dictionary.pdf                    # Dokumentasi data
-├── Chart_Generation_for_PPT.py              # Kode visualisasi untuk presentasi
-├── Catatan_Presentasi_Airbnb_Bangkok.md     # Catatan pembicara presentasi
-├── Chart_*.png                              # Grafik hasil visualisasi
-├── Airbnb_Bangkok_PPT_Content.txt           # Draft isi presentasi
-└── README.md                                # Dokumentasi proyek
+Airbnb_Bangkok_MGRS.ipynb                # Notebook analisis utama
+Airbnb Listings Bangkok.csv              # Dataset mentah
+Airbnb_Listings_Bangkok_cleaned.csv      # Dataset setelah pembersihan
+Airbnb_Dictionary.pdf                    # Dokumentasi data
+README.md                                # Dokumentasi proyek
 
 Langkah Penggunaan
 Prasyarat:
