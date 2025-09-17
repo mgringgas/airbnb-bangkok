@@ -1,131 +1,166 @@
-Analisis Pasar Airbnb Bangkok
-Gambaran Umum Proyek
+# Analisis Pasar Airbnb Bangkok
 
-Proyek ini menyajikan analisis komprehensif terhadap pasar Airbnb di Bangkok, Thailand. Tujuannya adalah memberikan wawasan yang dapat ditindaklanjuti oleh perusahaan manajemen properti maupun investor/pengembang properti. Analisis dilakukan melalui eksplorasi data (EDA) serta pengujian hipotesis statistik untuk mengungkap pola pasar dan peluang bisnis.
+## Gambaran Umum Proyek
 
-Tujuan Bisnis
-Pihak yang Berkepentingan:
+Proyek ini menyajikan analisis komprehensif terhadap pasar Airbnb di
+Bangkok, Thailand. Tujuannya adalah memberikan wawasan yang dapat
+ditindaklanjuti oleh perusahaan manajemen properti maupun
+investor/pengembang properti. Analisis dilakukan melalui eksplorasi data
+(EDA) serta pengujian hipotesis statistik untuk mengungkap pola pasar
+dan peluang bisnis.
 
-Perusahaan Manajemen Properti – membutuhkan wawasan operasional untuk mengoptimalkan portofolio.
+## Tujuan Bisnis
 
-Investor/Pengembang Properti – membutuhkan intelijen pasar untuk mendukung keputusan investasi strategis.
+### Pihak yang Berkepentingan:
 
-Pertanyaan Penelitian Utama:
+1.  **Perusahaan Manajemen Properti** -- membutuhkan wawasan operasional
+    untuk mengoptimalkan portofolio.\
+2.  **Investor/Pengembang Properti** -- membutuhkan intelijen pasar
+    untuk mendukung keputusan investasi strategis.
 
-Karakteristik listing Airbnb seperti apa yang paling diminati?
+### Pertanyaan Penelitian Utama:
 
-Bagaimana hubungan harga dengan lokasi dan tipe kamar?
+-   Karakteristik listing Airbnb seperti apa yang paling diminati?\
+-   Bagaimana hubungan harga dengan lokasi dan tipe kamar?\
+-   Apa perbedaan utama antara host profesional dan host kasual?\
+-   Bagaimana ketersediaan unit mencerminkan permintaan pasar?\
+-   Apa tren aktivitas terkini di pasar Airbnb Bangkok?
 
-Apa perbedaan utama antara host profesional dan host kasual?
+## Informasi Dataset
 
-Bagaimana ketersediaan unit mencerminkan permintaan pasar?
+-   **Sumber**: Dataset Airbnb Bangkok\
+-   **Jumlah Data**: Lebih dari 15.000 listing di 50 distrik\
+-   **Fitur**: Harga, lokasi, tipe kamar, data host, ulasan, dan
+    ketersediaan\
+-   **Periode**: Snapshot kondisi pasar saat ini, dilengkapi dengan data
+    historis ulasan
 
-Apa tren aktivitas terkini di pasar Airbnb Bangkok?
+## Metodologi
 
-Informasi Dataset
+### Analisis Statistik yang Digunakan:
 
-Sumber: Dataset Airbnb Bangkok
+-   **Eksplorasi Data (EDA)** -- untuk menemukan pola dan karakteristik
+    pasar\
+-   **Uji Hipotesis** -- untuk memvalidasi asumsi bisnis secara
+    statistik\
+-   **Analisis Korelasi** -- untuk mengidentifikasi hubungan
+    antarvariabel\
+-   **Uji ANOVA** -- untuk membandingkan harga berdasarkan tipe kamar\
+-   **Uji T** -- untuk membandingkan performa host
 
-Jumlah Data: Lebih dari 15.000 listing di 50 distrik
+### Tingkat Keyakinan: 95% (α = 0,05)
 
-Fitur: Harga, lokasi, tipe kamar, data host, ulasan, dan ketersediaan
+## Struktur Proyek
 
-Periode: Snapshot kondisi pasar saat ini, dilengkapi dengan data historis ulasan
+    Proyek Capstone Modul 2/
+    ├── Airbnb_Bangkok_MGRS.ipynb                # Notebook analisis utama
+    ├── Airbnb Listings Bangkok.csv              # Dataset mentah
+    ├── Airbnb_Listings_Bangkok_cleaned.csv      # Dataset setelah pembersihan
+    ├── Airbnb_Dictionary.pdf                    # Dokumentasi data
+    ├── Chart_Generation_for_PPT.py              # Kode visualisasi untuk presentasi
+    ├── Catatan_Presentasi_Airbnb_Bangkok.md     # Catatan pembicara presentasi
+    ├── Chart_*.png                              # Grafik hasil visualisasi
+    ├── Airbnb_Bangkok_PPT_Content.txt           # Draft isi presentasi
+    └── README.md                                # Dokumentasi proyek
 
-Metodologi
-Analisis Statistik yang Digunakan:
+## Langkah Penggunaan
 
-Eksplorasi Data (EDA) – untuk menemukan pola dan karakteristik pasar
+### Prasyarat:
 
-Uji Hipotesis – untuk memvalidasi asumsi bisnis secara statistik
-
-Analisis Korelasi – untuk mengidentifikasi hubungan antarvariabel
-
-Uji ANOVA – untuk membandingkan harga berdasarkan tipe kamar
-
-Uji T – untuk membandingkan performa host
-
-Tingkat Keyakinan: 95% (α = 0,05)
-Struktur Proyek
-Proyek Capstone Modul 2/
-Airbnb_Bangkok_MGRS.ipynb                # Notebook analisis utama
-Airbnb Listings Bangkok.csv              # Dataset mentah
-Airbnb_Listings_Bangkok_cleaned.csv      # Dataset setelah pembersihan
-Airbnb_Dictionary.pdf                    # Dokumentasi data
-README.md                                # Dokumentasi proyek
-
-Langkah Penggunaan
-Prasyarat:
+``` python
 pandas >= 1.3.0
 numpy >= 1.21.0
 matplotlib >= 3.4.0
 seaborn >= 0.11.0
 scipy >= 1.7.0
 plotly >= 5.0.0 (opsional)
+```
 
-Instalasi:
+### Instalasi:
+
+``` bash
 pip install pandas numpy matplotlib seaborn scipy plotly
+```
 
-Cara Menjalankan Analisis:
+### Cara Menjalankan Analisis:
 
-Unduh atau klon proyek ini.
+1.  Unduh atau klon proyek ini.\
+2.  Pastikan file dataset CSV tersedia pada direktori yang sama.\
+3.  Buka file `Airbnb_Bangkok_MGRS.ipynb` menggunakan Jupyter Notebook
+    atau Jupyter Lab.\
+4.  Jalankan seluruh sel secara berurutan.
 
-Pastikan file dataset CSV tersedia pada direktori yang sama.
+## Temuan Utama
 
-Buka file Airbnb_Bangkok_MGRS.ipynb menggunakan Jupyter Notebook atau Jupyter Lab.
+### 1. Karakteristik Pasar dan Popularitas
 
-Jalankan seluruh sel secara berurutan.
+-   **Tipe kamar paling populer**: Apartemen/rumah seutuhnya dan kamar
+    hotel.\
+-   **Distrik dengan ulasan tertinggi**:
+    -   Khlong Toei: 41.279 ulasan\
+    -   Vadhana: 37.415 ulasan\
+    -   Sathon: 22.242 ulasan\
+    -   Ratchathewi: 20.692 ulasan\
+    -   Huai Khwang: lebih dari 18.000 ulasan
 
-Temuan Utama
-1. Karakteristik Pasar dan Popularitas
+### 2. Informasi Harga
 
-Tipe kamar paling populer: Apartemen/rumah seutuhnya dan kamar hotel.
+-   **Wilayah premium**: Lat Phrao (฿3.538), Pathum Wan (฿3.454), Nong
+    Chok (฿3.279).\
+-   **Wilayah dengan harga terjangkau**: Lak Si, Nong Khaem, Don Mueang,
+    Phasi Charoen.\
+-   **Hasil uji ANOVA** menunjukkan terdapat perbedaan harga yang
+    signifikan antar tipe kamar (p \< 0,05).
 
-Distrik dengan ulasan tertinggi:
+### 3. Pola Performa Host
 
-Khlong Toei: 41.279 ulasan
+-   Host profesional memiliki tingkat aktivitas ulasan 2,3 kali lebih
+    tinggi dibanding host kasual (0,62 vs 0,26 ulasan/bulan).\
+-   Host profesional lebih fokus pada efisiensi operasional dibanding
+    penetapan harga premium.\
+-   Uji T membuktikan perbedaan ini signifikan secara statistik (p \<
+    0,05).
 
-Vadhana: 37.415 ulasan
+### 4. Dinamika Permintaan dan Ketersediaan
 
-Sathon: 22.242 ulasan
+-   Terdapat korelasi negatif yang cukup kuat (-0,38) antara
+    ketersediaan unit dan jumlah ulasan.\
+-   Distrik Huai Khwang dan Vadhana memperlihatkan permintaan tinggi
+    (ketersediaan rendah dengan ulasan tinggi).\
+-   Properti dengan ketersediaan \<100 hari/tahun menjadi indikator kuat
+    adanya permintaan tinggi.
 
-Ratchathewi: 20.692 ulasan
+## Hasil Uji Statistik
 
-Huai Khwang: lebih dari 18.000 ulasan
+  -----------------------------------------------------------------------------
+  Hipotesis       Jenis Uji       Hasil        P-Value      Interpretasi
+  --------------- --------------- ------------ ------------ -------------------
+  H1: Terdapat    ANOVA           Signifikan   \< 0,05      Harga berbeda
+  perbedaan harga                                           secara signifikan
+  berdasarkan                                               antar tipe kamar
+  tipe kamar                                                
 
-2. Informasi Harga
+  H2: Hubungan    Korelasi        Tidak        \> 0,05      Popularitas tidak
+  antara                          signifikan                berkorelasi dengan
+  popularitas dan                                           harga distrik
+  harga                                                     
 
-Wilayah premium: Lat Phrao (฿3.538), Pathum Wan (฿3.454), Nong Chok (฿3.279).
+  H3: Aktivitas   Uji T           Signifikan   \< 0,05      Host profesional
+  host                                                      lebih aktif
+  profesional                                               dibanding host
+  lebih tinggi                                              kasual
 
-Wilayah dengan harga terjangkau: Lak Si, Nong Khaem, Don Mueang, Phasi Charoen.
+  H4: Hubungan    Korelasi        Signifikan   \< 0,05      Ketersediaan rendah
+  ketersediaan                                              mencerminkan
+  dengan                                                    permintaan tinggi
+  permintaan                                                
+  -----------------------------------------------------------------------------
 
-Hasil uji ANOVA menunjukkan terdapat perbedaan harga yang signifikan antar tipe kamar (p < 0,05).
+## Rekomendasi Bisnis
 
-3. Pola Performa Host
+### Untuk Perusahaan Manajemen Properti:
 
-Host profesional memiliki tingkat aktivitas ulasan 2,3 kali lebih tinggi dibanding host kasual (0,62 vs 0,26 ulasan/bulan).
-
-Host profesional lebih fokus pada efisiensi operasional dibanding penetapan harga premium.
-
-Uji T membuktikan perbedaan ini signifikan secara statistik (p < 0,05).
-
-4. Dinamika Permintaan dan Ketersediaan
-
-Terdapat korelasi negatif yang cukup kuat (-0,38) antara ketersediaan unit dan jumlah ulasan.
-
-Distrik Huai Khwang dan Vadhana memperlihatkan permintaan tinggi (ketersediaan rendah dengan ulasan tinggi).
-
-Properti dengan ketersediaan <100 hari/tahun menjadi indikator kuat adanya permintaan tinggi.
-
-Hasil Uji Statistik
-Hipotesis	Jenis Uji	Hasil	P-Value	Interpretasi
-H1: Terdapat perbedaan harga berdasarkan tipe kamar	ANOVA	Signifikan	< 0,05	Harga berbeda secara signifikan antar tipe kamar
-H2: Hubungan antara popularitas dan harga	Korelasi	Tidak signifikan	> 0,05	Popularitas tidak berkorelasi dengan harga distrik
-H3: Aktivitas host profesional lebih tinggi	Uji T	Signifikan	< 0,05	Host profesional lebih aktif dibanding host kasual
-H4: Hubungan ketersediaan dengan permintaan	Korelasi	Signifikan	< 0,05	Ketersediaan rendah mencerminkan permintaan tinggi
-Rekomendasi Bisnis
-Untuk Perusahaan Manajemen Properti:
-
-Strategi Lokasi: Prioritaskan ekspansi ke distrik Khlong Toei, Vadhana, dan Sathon.
-
-Strategi Harga: Terapkan harga dinamis sesuai pola permintaan di tiap distrik.
+-   **Strategi Lokasi**: Prioritaskan ekspansi ke distrik Khlong Toei,
+    Vadhana, dan Sathon.\
+-   **Strategi Harga**: Terapkan harga dinamis sesuai pola permintaan di
+    tiap distrik.
